@@ -1,0 +1,22 @@
+{
+  "name": "mr.youngjoey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ma-Sandza/MR.YOUNGJOEY.git"
+  },
+  "author": "SANDILE MOREMEDI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ma-Sandza/MR.YOUNGJOEY/issues"
+  },
+  "homepage": "https://github.com/Ma-Sandza/MR.YOUNGJOEY#readme",
+  "devDependencies": {
+    
+  }
+}

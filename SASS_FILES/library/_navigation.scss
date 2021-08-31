@@ -1,0 +1,39 @@
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    li{
+        padding: 2rem;
+        &:hover{
+            a{
+                color: white;
+
+            }
+            background-color: black;
+            color: white;
+        }
+        &:active{
+            text-decoration: underline;
+        }
+    }
+        
+    
+
+    a{
+        text-decoration: none;
+        color: black;
+        &:active{
+            text-decoration: underline;
+        }
+
+
+    }
+
+
+
+}

@@ -1,15 +1,16 @@
-* {
+*, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: sans-serif;
 }
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
   background-color: black;
-  color: white;
   overflow: hidden;
+  font-family: sans-serif;
+  color: white;
 }
 
 .navigation ul {
@@ -56,13 +57,6 @@ body {
   text-decoration: underline;
 }
 
-.name {
-  font-size: 6.250rem;
-  margin-left: 3.125rem;
-  font-family: 'Kaisei Decol', serif;
-  margin-top: 9.375rem;
-}
-
 .image {
   float: right;
   clear: right;
@@ -91,4 +85,58 @@ body {
   left: -100px;
   top: -50px;
 }
-/*# sourceMappingURL=index.css.map */
+
+.bg {
+  position: relative;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.bg::before {
+  content: " ";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url("/URLs/IMG-20210830-WA0001.jpg");
+  z-index: -1;
+  opacity: 0.25;
+  background-position: center;
+}
+
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.name-mr {
+  font-size: 6.250rem;
+  font-family: 'Kaisei Decol', serif;
+  margin-left: 3rem;
+}
+
+.name-y {
+  font-size: 6.250rem;
+  font-family: 'Kaisei Decol', serif;
+}
+
+.name-j {
+  font-size: 6.250rem;
+  font-family: 'Kaisei Decol', serif;
+}
+/*# sourceMappingURL=globals_homepage.css.map */

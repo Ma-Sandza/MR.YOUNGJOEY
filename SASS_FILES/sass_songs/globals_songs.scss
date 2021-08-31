@@ -1,0 +1,29 @@
+@import '../library/basics';
+@import '../library/navigation';
+
+.heading_one, .heading_two{
+    text-align: center;
+    font-size: 2rem;
+}
+
+body{
+    overflow: scroll;
+}
+.album-one{
+    flex-wrap: 1;
+}
+.album-image{
+    width: 100vw;
+    height: 3rem;
+}
+.album-name{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+.album-info{
+    line-height: 35px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}

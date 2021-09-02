@@ -1,29 +1,60 @@
 @import '../library/basics';
 @import '../library/navigation';
 
-.heading_one, .heading_two{
-    text-align: center;
+header{
     font-size: 2rem;
+    text-align: center;
 }
 
-body{
-    overflow: scroll;
-}
-.album-one{
-    flex-wrap: 1;
-}
-.album-image{
-    width: 100vw;
-    height: 3rem;
-}
-.album-name{
+h3{
     font-size: 1.5rem;
-    text-decoration: underline;
     text-align: center;
 }
-.album-info{
-    line-height: 35px;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    font-weight: bold;
+table{
+    border: white 1px solid;
+    width: 45%;
+    height: 30em;
+    clear: both;
+    position: relative;
+}
+.album_one{
+    float: right;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.album_two{
+    float: left;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+thead{
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline;
+}
+td{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+    font-family: 'Merriweather', serif;
+}
+tbody{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+a{
+    color: yellow;
+    cursor: pointer;
+
+}
+@media  all and (max-width: 320px) {
+    
+    
 }

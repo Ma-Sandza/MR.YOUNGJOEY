@@ -1,6 +1,8 @@
 .name{
     display: flex;
     flex-direction: column;
+    height: 100vh;
+
     color:white;
 }
 .name-mr{
@@ -17,4 +19,29 @@
 .name-j{
     font-size: 6.250rem;
     font-family: 'Kaisei Decol', serif;
+    text-align: right;
+}
+@media (max-width: 650px){
+    .name{
+        display: grid;
+        justify-items: center;
+        height: 100vh;
+        align-content: space-around;
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // text-align: center;
+        
+    }
+    .name-j{
+        text-align: center;
+        font-size: 5rem;
+    }
+    .name-mr{
+        font-size: 5rem;
+
+    }
+    .name-y{
+        font-size: 5rem;
+    }
 }

@@ -1,5 +1,6 @@
 @import '../library/basics';
 @import '../library/navigation';
+@import '../library/media_querie';
 
 header{
     font-size: 2rem;
@@ -54,7 +55,22 @@ a{
     cursor: pointer;
 
 }
-@media  all and (max-width: 320px) {
-    
-    
+@media (max-width: 490px) {
+    .album_one{
+        float: none;
+        width: 100%;
+        border: none;
+    }
+    .album_two{
+        float: none;
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+        border: none;
+        thead tr td{
+            font-size: 2rem
+        }
+    }
 }
+
+

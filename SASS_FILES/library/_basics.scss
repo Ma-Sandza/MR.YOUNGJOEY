@@ -1,7 +1,8 @@
 *, *::before, *::after{
-    font-family: sans-serif;
     box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 body{
     padding: 0;
@@ -9,6 +10,7 @@ body{
     background-color: black;
     font-family: sans-serif;
     color: white;
+    font-family: 'Roboto Condensed', sans-serif;;
 }
 hr{
     overflow: auto;

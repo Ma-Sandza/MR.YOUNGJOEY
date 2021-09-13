@@ -42,6 +42,9 @@
     } .navigation .active {
         display: flex;
     }
+    main{
+        margin-top: 50px;
+    }
 }
 @media (min-width: 651px) {
     .navigation ul{
@@ -51,4 +54,5 @@
         display: flex;
         flex-shrink: 1;
     }
+    
 }

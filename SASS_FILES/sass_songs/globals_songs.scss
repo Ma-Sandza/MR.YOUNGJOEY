@@ -7,69 +7,70 @@ header{
     text-align: center;
 }
 
+
 h3{
     font-size: 1.5rem;
     text-align: center;
 }
 table{
-    border: black 1px solid;
-    width: 45%;
-    height: 30em;
-    clear: both;
-    position: relative;
-}
-.album_one{
-    float: right;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-.album_two{
-    float: left;
-    position: absolute;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-thead{
-    text-align: center;
-    padding: 20px;
-    text-decoration: underline;
-}
-td{
-    padding: 10px;
-    border-radius: 10px;
-    border-color: black;
-}
-tbody{
-    
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-}
-a{
-    color: yellow;
-    cursor: pointer;
-
-}
-@media (max-width: 490px) {
-    .album_one{
-        float: none;
-        width: 100%;
-        border: none;
+    border: 1px solid white;
+    width: 90vw;
+    display: grid;
+    margin-left: 35px;
+    th{
+        width: 100vw;
+        margin: 20px
     }
-    .album_two{
-        float: none;
+    .image_name{
+        float: left;
         width: 100%;
-        margin: 0;
-        margin-top: 10px;
-        border: none;
-        thead tr td{
-            font-size: 2rem
+        img{
+            float: left;
+        }
+    }
+    .table-head{
+        padding: 10px;
+
+    }
+    td{
+        padding: 30px;
+        font-size:1.5rem
+    }
+    .name{
+        font-size: 2.5rem;
+        padding-left: 10px;
+        display: flex;
+    }
+    .paragraph{
+        font-size: 1.5rem;
+        display: flex;
+        padding-left:10px
+    }
+    a{
+        text-decoration:none;
+        color: #fff;
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
+.table_one{
+    margin-top: 20px;
+    th{
+        padding: 10px;
+    }
+}
+@media (max-width: 650px){
+    th .image_name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+    }
+    .son{
+        margin: 0 15px;
+        margin-top:20px
+    }
+    
+}
 

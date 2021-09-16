@@ -1,3 +1,55 @@
 @import '../library/basics';
 @import '../library/navigation';
 @import '../library/media_querie';
+
+.contact{
+    margin: 300px;
+    margin-top: 150px;
+    margin-bottom: 0;
+    display: grid;
+    .heading{
+    text-align: center;
+    }
+    section{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        font-size: 30px;
+        .instagram-info:hover{
+            color: #fb3958 ;
+        }
+        .twitter-info:hover{
+            color: #1DA1F2;
+        }
+        .email-info:hover{
+            color: #BB001B;
+        }
+        a{
+            float: right;
+            margin-left: 30px;
+            color: white;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.feedback{
+    margin: 30px 400px;
+    form{
+        // border: 1px white solid;
+        display: flex;
+        flex-direction: column;
+        textarea{
+            margin: 30px;
+            border-radius: 10px;
+        }
+        input{
+            margin: 40px;
+            margin-top: 0;
+        }
+
+    }
+}

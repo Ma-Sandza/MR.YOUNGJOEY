@@ -1,0 +1,76 @@
+@import '../library/basics';
+@import '../library/navigation';
+@import '../library/media_querie';
+
+header{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+table{
+    border: 1px solid white;
+    width: 90vw;
+    display: grid;
+    margin-left: 35px;
+    th{
+        width: 100vw;
+        margin: 20px
+    }
+    .image_name{
+        float: left;
+        width: 100%;
+        img{
+            float: left;
+        }
+    }
+    .table-head{
+        padding: 10px;
+
+    }
+    td{
+        padding: 30px;
+        font-size:1.5rem
+    }
+    .name{
+        font-size: 2.5rem;
+        padding-left: 10px;
+        display: flex;
+    }
+    .paragraph{
+        font-size: 1.5rem;
+        display: flex;
+        padding-left:10px
+    }
+    a{
+        text-decoration:none;
+        color: #fff;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.table_one{
+    margin-top: 20px;
+    th{
+        padding: 10px;
+    }
+}
+@media (max-width: 650px){
+    th .image_name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .son{
+        margin: 0 15px;
+        margin-top:20px
+    }
+    
+}
+

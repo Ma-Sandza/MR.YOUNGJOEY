@@ -27,6 +27,7 @@ hr {
           flex-direction: row;
   margin: 0;
   width: 100vw;
+  padding: 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: white;

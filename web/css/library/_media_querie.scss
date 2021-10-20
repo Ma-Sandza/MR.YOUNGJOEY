@@ -18,7 +18,7 @@
     }
 @media (max-width : 650px) {
     .toggle-button{
-        display: flex;
+        display: flex !important;
         .bar{
             background-color: gold;
         }
@@ -48,7 +48,7 @@
 }
 @media (min-width: 651px) {
     .navigation ul{
-        display: flex;
+        display: flex !important;
     }
     .name{
         display: flex;

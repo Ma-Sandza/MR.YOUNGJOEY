@@ -1,0 +1,60 @@
+@import '../library/basics';
+@import '../library/navigation';
+@import '../library/media_querie';
+
+main{
+    padding: 0 40px;
+    
+}
+.heading{
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: 1;
+}
+.part{
+    clear: both;
+    display: flex;
+    height: max-content;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .para{
+        padding: 0 20px;
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+    .sub-heading{
+        text-align: center;
+        font-size: 2.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.part .album-image{
+    width: 100%;
+    height: auto;
+    float: right;
+    max-width: 300px;
+}
+.part p{
+    float: left;
+}
+@media (max-width: 799px) {
+    main{
+        margin: 40px 0;
+        .part{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            img{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

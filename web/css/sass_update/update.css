@@ -62,103 +62,6 @@ hr {
   text-decoration: underline;
 }
 
-.image {
-  z-index: -100;
-  float: right;
-  clear: right;
-  position: relative;
-  left: -50px;
-  right: 0;
-  top: 100px;
-  bottom: 0;
-}
-
-.image #image {
-  width: 300px;
-  height: 300px;
-  z-index: 2;
-  position: relative;
-}
-
-.image::before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  z-index: 1;
-  height: 300px;
-  width: 300px;
-  background-color: white;
-  left: -100px;
-  top: -50px;
-}
-
-.bg {
-  position: relative;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.bg::before {
-  content: " ";
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-image: url("../../../URLs/story-of-nolkey-2.jpg");
-  z-index: -1;
-  opacity: 0.25;
-  background-size: contain;
-  background-position: center;
-}
-
-.name {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  color: white;
-}
-
-.name-mr {
-  font-size: 6.250rem;
-  font-family: 'Kaisei Decol', serif;
-  margin-left: 3rem;
-}
-
-.name-y {
-  font-size: 6.250rem;
-  font-family: 'Kaisei Decol', serif;
-}
-
-.name-j {
-  font-size: 6.250rem;
-  font-family: 'Kaisei Decol', serif;
-  text-align: right;
-}
-
-@media (max-width: 650px) {
-  .name {
-    display: grid;
-    justify-items: center;
-    height: 100vh;
-    align-content: space-around;
-  }
-  .name-j {
-    text-align: center;
-    font-size: 5rem;
-  }
-  .name-mr {
-    font-size: 5rem;
-  }
-  .name-y {
-    font-size: 5rem;
-  }
-}
-
 .toggle-button {
   position: absolute;
   top: .75rem;
@@ -217,7 +120,66 @@ hr {
   }
 }
 
-html {
-  overflow: hidden;
+main {
+  padding: 0 40px;
 }
-/*# sourceMappingURL=globals_homepage.css.map */
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: 1;
+}
+
+.part {
+  clear: both;
+  display: flex;
+  height: max-content;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.part .para {
+  padding: 0 20px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.part .sub-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.part .album-image {
+  width: 100%;
+  height: auto;
+  float: right;
+  max-width: 300px;
+}
+
+.part p {
+  float: left;
+}
+
+@media (max-width: 799px) {
+  main {
+    margin: 40px 0;
+  }
+  main .part {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  main .part img {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=update.css.map */

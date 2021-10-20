@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 *, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,7 +9,6 @@ body {
   background-color: black;
   font-family: sans-serif;
   color: white;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 
 hr {
@@ -18,18 +16,11 @@ hr {
 }
 
 .navigation ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin: 0;
-  width: 100vw;
   padding: 0;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   background-color: white;
   color: black;
   list-style-type: none;
@@ -39,18 +30,12 @@ hr {
 .navigation ul li {
   padding: 2rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .navigation ul li a {
-  -ms-flex-item-align: space-around;
-      align-self: space-around;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-self: space-around;
   display: flex;
 }
 
@@ -82,13 +67,8 @@ hr {
   top: .75rem;
   right: 1rem;
   display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   width: 30px;
   height: 31px;
   z-index: 100;
@@ -103,9 +83,7 @@ hr {
 
 @media (max-width: 650px) {
   .toggle-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: flex !important;
   }
   .toggle-button .bar {
     background-color: gold;
@@ -114,27 +92,17 @@ hr {
     display: none;
   }
   .navigation {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .navigation ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
   }
   .navigation li {
     text-align: center;
   }
   .navigation .active {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   main {
@@ -144,16 +112,11 @@ hr {
 
 @media (min-width: 651px) {
   .navigation ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: flex !important;
   }
   .name {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
+    flex-shrink: 1;
   }
 }
 
@@ -161,7 +124,6 @@ hr {
   margin: 300px;
   margin-top: 150px;
   margin-bottom: 0;
-  display: -ms-grid;
   display: grid;
 }
 
@@ -171,12 +133,8 @@ hr {
 
 .contact section {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 40px;
   font-size: 30px;
 }
@@ -209,13 +167,8 @@ hr {
 }
 
 .feedback form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .feedback form label {

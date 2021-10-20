@@ -2,14 +2,12 @@
     display: flex;
     flex-direction: row;
     margin: 0;
-    width: 100vw;
     padding: 0;
     justify-content: space-around;
     background-color: white;
     color: black;
     list-style-type: none;
     text-decoration: none;
-
     li{
         padding: 2rem;
         width: 100%;
@@ -31,9 +29,6 @@
             text-decoration: underline;
         }
     }
-        
-    
-
     a{
         text-decoration: none;
         color: black;
@@ -41,10 +36,5 @@
         &:active{
             text-decoration: underline;
         }
-
-
     }
-
-
-
 }

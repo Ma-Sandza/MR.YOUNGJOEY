@@ -21,14 +21,14 @@ h1{
 }
 
 .img-div::before{
-content: "";
-background-color: white;
-position: absolute;
-display: block;
-
-width: 300px;
-height: 400px;
-float: right;
+    content: "";
+    background-color: white;
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 400px;
+    float: right;
+    top: -20px;
 }
 
 .img-div{
@@ -77,6 +77,7 @@ p{
     body{
         overflow-x: hidden;
     }
+    
     .img-section{
         float: none;
     }
